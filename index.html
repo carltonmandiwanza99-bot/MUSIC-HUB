@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Hub | Cherub</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-card {
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            border-top: 5px solid #ff6600; 
+            width: 320px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.8);
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 0;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 12px;
+            background: #252525;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            border-color: #ff6600;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #ff6600;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff8533;
+            transform: translateY(-1px);
+        }
+
+        /* Copyright Styling */
+        .copyright {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 10px;
+            color: #555;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-card">
+    <h2>Music Hub</h2>
+    
+    <form onsubmit="redirectToMusic(event)">
+        <div class="input-group">
+            
+            </select>
+        </div>
+
+        <div class="input-group">
+        </div>
+
+        <button type="submit" class="btn">Enter Site</button>
+    </form>
+
+    <div class="copyright">
+        &copy; cherub s web 2026
+    </div>
+</div>
+
+<script>
+    function redirectToMusic(event) {
+        event.preventDefault();
+        // Redirecting to a music platform
+        window.location.href = "https://www.spotify.com"; 
+    }
+</script>
+
+</body>
+</html>
